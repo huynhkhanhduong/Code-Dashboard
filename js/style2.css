@@ -1,0 +1,73 @@
+/*thanh thông báo*/
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+.container {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+h2 {
+    margin-top: 30px;
+}
+.employee-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+.employee-table th, .employee-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+.employee-table th {
+    background-color: #f2f2f2;
+}
+.employee-details {
+    margin-top: 20px;
+}
+.employee-details div {
+    margin-bottom: 10px;
+}
+/* kết thúc thanh thông báo*/
+
+
+
+/*thanh công cụ chuyển hướng*/
+.task-bar {
+    background-color: #333;
+    width: 150px; /* Độ rộng của thanh task-bar */
+}
+
+.task-bar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.task-bar li {
+    margin: 0;
+    padding: 0;
+}
+
+.task-bar a {
+    display: block; /* Chuyển liên kết thành khối để nằm dọc */
+    color: white;
+    text-decoration: none;
+    padding: 10px; /* Khoảng cách giữa các mục */
+    border-bottom: 1px solid white; /* Đường viền dưới giống như phân cách */
+}
+
+.task-bar a:hover {
+    background-color: #555; /* Màu nền khi di chuột qua */
+}
+
+/*task*/
