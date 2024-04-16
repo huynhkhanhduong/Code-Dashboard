@@ -9,15 +9,13 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
-<body  style="font-family: sans-serif;">
+<body>
     <!--thanh công cụ(giới thiệu)-->
-    <header style="background-color: #4CAF50; color: white; text-align: center; padding: 2px 0;">
+    <header>
         <h1>Employee Dashboard</h1>
     </header>
     <!--kết thúc thanh công cụ-->
-
-    
-    <div class="container" style="max-width: 1200px; margin: 20px auto; padding: 0 20px;">
+    <div class="container">
         <div class="row"> 
             <!--task chia 4-->
             <div class="col-md-4">
@@ -40,49 +38,23 @@
 
             <!--payroll-->
             <div class="col-md-8">
-                <nav style="display: flex;
-                align-items: center;
-                background: #00A9D4;
-                height: 60px;
-                position: relative;">
-                    <div class="logo" style="flex: 1;
-                    margin-left: 10px;
-                    color: #eee;
-                    font-size: 30px;
-                    font-family: 'Times New Roman';">Payroll</div>
-                    <div class="icon" style="cursor: pointer; opacity: .7;
-                    margin-right: 10px;
-                    line-height: 30px;" onclick="toggleNotifi()">
-                        <img src="bell.png" alt="" style="display: inline-block;
-                        width: 30px;
-                        margin-top: 10px;"> <span style="background: #f00;
-                        padding: 6px;
-                        border-radius: 50%;
-                        color: #fff;
-                        vertical-align: top;
-                        margin-left: -25px;">5</span>
+                <nav>
+                    <div class="logo">Payroll</div>
+                    <div class="icon" onclick="toggleNotifi()">
+                        <img src="bell.png" alt=""> <span>5</span>
                     </div>
-                    <div class="notifi-box" style="width: 300px;
-                    height: 0px;
-                    opacity: 0;
-                    position: absolute;
-                    top: 63px;
-                    right: 35px;
-                    transition: 1s opacity, 250ms height;
-                    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);" id="box">
-                        <h2 style="font-size: 14px;
-                        padding: 10px;
-                        border-bottom: 1px solid #eee;
-                        color: #999;">Thông báo <span style="color: #f00;">5</span></h2>
-                        <div class="notifi-item" style="display: flex; background-color: #eee;
-                        border-bottom: 1px solid #eee;
-                        padding: 15px 5px;
-                        margin-bottom: 15px;
-                        cursor: pointer;">
-                            <img src="avatar1.png" alt="" style="display: block;
-                            width: 50px;
-                            margin-right: 10px;
-                            border-radius: 50%;">
+                    <div class="notifi-box" id="box">
+                        <h2>Thông báo <span>5</span></h2>
+                        <div class="notifi-item">
+                            <img src="avatar1.png" alt="">
+                            <div class="text">
+                               <h4>Hồ Phúc Hiếu</h4>
+                               <p>@Hồ Phúc Hiếu</p>
+                            </div> 
+                        </div>
+            
+                        <div class="notifi-item">
+                            <img src="avatar2.png" alt="img">
                             <div class="text">
                                <h4 style="color: #777;
                                font-size: 16px;
@@ -92,15 +64,8 @@
                             </div> 
                         </div>
             
-                        <div class="notifi-item" style="display: flex;background-color: #eee;
-                        border-bottom: 1px solid #eee;
-                        padding: 15px 5px;
-                        margin-bottom: 15px;
-                        cursor: pointer;">
-                            <img src="avatar2.png" alt="img" style="display: block;
-                            width: 50px;
-                            margin-right: 10px;
-                            border-radius: 50%;">
+                        <div class="notifi-item">
+                            <img src="avatar3.png" alt="img">
                             <div class="text">
                                <h4 style="color: #777;
                                font-size: 16px;
@@ -110,57 +75,19 @@
                             </div> 
                         </div>
             
-                        <div class="notifi-item" style="display: flex;background-color: #eee;
-                        border-bottom: 1px solid #eee;
-                        padding: 15px 5px;
-                        margin-bottom: 15px;
-                        cursor: pointer;">
-                            <img src="avatar3.png" alt="img" style="display: block;
-                            width: 50px;
-                            margin-right: 10px;
-                            border-radius: 50%;">
+                        <div class="notifi-item">
+                            <img src="avatar4.png" alt="img" >
                             <div class="text">
-                               <h4 style="color: #777;
-                               font-size: 16px;
-                               margin-top: 10px;">Hồ Phúc Hiếu</h4>
-                               <p style="color: #aaa;
-                               font-size: 12px;">@Hồ Phúc Hiếu</p>
+                               <h4>Hồ Phúc Hiếu</h4>
+                               <p>@Hồ Phúc Hiếu</p>
                             </div> 
                         </div>
             
-                        <div class="notifi-item" style="display: flex;background-color: #eee;
-                        border-bottom: 1px solid #eee;
-                        padding: 15px 5px;
-                        margin-bottom: 15px;
-                        cursor: pointer;">
-                            <img src="avatar4.png" alt="img" style="display: block;
-                            width: 50px;
-                            margin-right: 10px;
-                            border-radius: 50%;">
+                        <div class="notifi-item">
+                            <img src="avatar5.png" alt="img">
                             <div class="text">
-                               <h4 style="color: #777;
-                               font-size: 16px;
-                               margin-top: 10px;">Hồ Phúc Hiếu</h4>
-                               <p style="color: #aaa;
-                               font-size: 12px;">@Hồ Phúc Hiếu</p>
-                            </div> 
-                        </div>
-            
-                        <div class="notifi-item"style="display: flex;background-color: #eee;
-                        border-bottom: 1px solid #eee;
-                        padding: 15px 5px;
-                        margin-bottom: 15px;
-                        cursor: pointer;">
-                            <img src="avatar5.png" alt="img" style="display: block;
-                            width: 50px;
-                            margin-right: 10px;
-                            border-radius: 50%;">
-                            <div class="text">
-                               <h4 style="color: #777;
-                               font-size: 16px;
-                               margin-top: 10px;">Hồ Phúc Hiếu</h4>
-                               <p style="color: #aaa;
-                               font-size: 12px;">@Hồ Phúc Hiếu</p>
+                               <h4>Hồ Phúc Hiếu</h4>
+                               <p>@Hồ Phúc Hiếu</p>
                             </div> 
                         </div>
             
